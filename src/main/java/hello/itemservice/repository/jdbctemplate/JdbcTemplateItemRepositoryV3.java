@@ -37,7 +37,6 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository {
                 //.usingColumns("item_name", "price", "quantity"); //생략 가능
     }
 
-
     @Override
     public Item save(Item item) {
         BeanPropertySqlParameterSource param = new BeanPropertySqlParameterSource(item);
